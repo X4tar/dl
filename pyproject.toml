@@ -1,0 +1,40 @@
+[project]
+name = "cbow-pytorch"
+version = "0.1.0"
+description = "Continuous Bag of Words (CBOW) model implementation using PyTorch"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=1.9.0",
+    "numpy>=1.21.0",
+    "matplotlib>=3.3.0",
+    "scikit-learn>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "flake8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+include = [
+    "*.py",
+    "README.md",
+    "Makefile",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
