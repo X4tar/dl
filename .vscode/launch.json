@@ -2,70 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "运行 CBOW 基本示例",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${workspaceFolder}/cbow_model.py",
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}",
-            "python": "${workspaceFolder}/.venv/bin/python",
-            "justMyCode": true,
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}"
-            }
-        },
-        {
-            "name": "运行 CBOW 完整演示",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${workspaceFolder}/cbow_example.py",
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}",
-            "python": "${workspaceFolder}/.venv/bin/python",
-            "justMyCode": true,
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}"
-            }
-        },
-        {
-            "name": "运行 CBOW 测试",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${workspaceFolder}/test_cbow.py",
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}",
-            "python": "${workspaceFolder}/.venv/bin/python",
-            "justMyCode": true,
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}"
-            }
-        },
-        {
-            "name": "调试 CBOW 模型",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${workspaceFolder}/cbow_model.py",
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}",
-            "python": "${workspaceFolder}/.venv/bin/python",
-            "justMyCode": false,
-            "stopOnEntry": false,
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}"
-            }
-        },
-        {
-            "name": "当前文件 (Python)",
+            "name": "Debug Current File",
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}",
-            "python": "${workspaceFolder}/.venv/bin/python",
-            "justMyCode": true,
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}"
-            }
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
